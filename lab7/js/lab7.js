@@ -4,22 +4,23 @@
   * License: Public Domain
 */
 
-// sourceUserName - A function that takes user input and sort letters in name.
-function sortUserName () {
-  var userName = window.prompt("Hello! I would like to know you're name.");
-  console.log("userName =", userName);
-  // need to split array
-  var nameArray = userName.split ('');
-  console.log("nameArray =", nameArray);
-  //sort the array
-  var nameArraysort = nameArray.sort();
-  console.log("nameArraysort =", nameArraysort);
-  //put the array back into a string
-  var nameSorted = nameArraySort.join('');
-  console.log("nameSorted=", nameSorted);
-  //
-  return nameSorted;
-}
-//output
-document.writeln("I've done it!",
-    sortUserName(), "</br>");
+    //Sort the letters of the user's name and return those from the function. Hint: You can't sort strings, but you can sort arrays.
+   function sortUserName() {
+     var userName = window.prompt("Hello! I would like to know you're name.");
+
+     console.log("userName =", userName);
+
+     var nameArray = userName.split('');
+     console.log("nameArray =", nameArray);
+
+     var nameArraySort = nameArray.sort();
+     console.log("nameArraySort =", nameArraySort);
+
+     var nameSorted = nameArraySort.join('');
+     console.log("nameSorted =", nameSorted);
+
+     return nameSorted;
+
+   }
+
+   document.writeln("I've done it!", sortUserName());

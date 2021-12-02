@@ -1,5 +1,9 @@
-//var myUrl = "http://numbersapi.com/42/math";
-//var myUrl = "https://api.kanye.rest/";
+/*
+* Author: Izzy Lasarow <ilasarow@ucsc.edu>
+* Created:  28th of November
+* License: Public Domain
+*/
+
 var myUrl = "https://api.kanye.rest/";
 
 $("#activate").click(callAjax);
